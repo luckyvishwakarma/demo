@@ -1,0 +1,14 @@
+
+%table.pull_right
+  %tr
+    %th ID
+    %th Title
+    %th Description
+  - @articles.each do |article|
+    %tr
+      %td 
+        = article.id
+      %td
+        = article.title
+      %td
+        = article.description   
